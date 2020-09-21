@@ -1,0 +1,21 @@
+Resumen de pasos
+Función 1: Dimensión de Capas "dim_capas"
+ Se define el tamaño de las neuronas (hiper parametro, manual), 
+ el tamaño de la capa de entrada (X(i)s), y el tamaño de capa de salida, Yjs
+ 
+Función 2: Inicialización parámetros "param_I"
+ Inicializa W1, b1, W2, b2, con np.random u np.zerps respectivamente
+ Se aplica assert para validar las dimensiones de las matrices
+ Finalmente crea un diccionario llamado "param", don de los guarda
+ esta función retorna param
+
+Definción BLUCLE, 
+Propagación hacia adelante
+Función 3:
+
+
+Función 3: Progragación hacia adelante "propagacion"
+ Utiliza los parámetros del diccionario, W1, W2, b1, b2 y 
+ realiza eñ calcilo de Z1 (WX+b), A1 )tanh(Z1), Z2 (WA1+b2) y A2 (sigmoide(Z2))
+ realiza un assert para confirmar que el shape es 1,400 o mejor 1, # de obs training
+ finalmente crea el diccionario memo, que guarda el valor de Z1,A1,Z2,A2
