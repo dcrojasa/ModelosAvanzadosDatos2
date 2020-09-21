@@ -13,9 +13,12 @@ Definción BLUCLE,
 Propagación hacia adelante
 Función 3:
 
-
 Función 3: Progragación hacia adelante "propagacion"
  Utiliza los parámetros del diccionario, W1, W2, b1, b2 y 
  realiza eñ calcilo de Z1 (WX+b), A1 )tanh(Z1), Z2 (WA1+b2) y A2 (sigmoide(Z2))
  realiza un assert para confirmar que el shape es 1,400 o mejor 1, # de obs training
  finalmente crea el diccionario memo, que guarda el valor de Z1,A1,Z2,A2
+
+Función 4: Función de pérdida
+ Calcula la función de coste que compara de alguna manera, la y real con la y estimada= log(A2)
+ cómo tenemos A2 que es un arreglo, sacamos log(A2) para obtener la probabilidad, y usamos np.multiply para multiplicar los dos arreglosy np.sum para sumar 
